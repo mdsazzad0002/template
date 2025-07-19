@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D Cafe</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/assets/styles/demo1.css">
+  <link rel="stylesheet" href="/assets/styles/main.css">
+  <link rel="icon" type="image/x-icon" href="/assets/logo/d-cafe-dark.png">
+
+
+</head>
+
+<body>
+
+
+  <!-- Navbar ========================================= Navbar ======================================================== -->
+  <!-- Navbar ========================================= Navbar ======================================================== -->
+  <!-- Navbar ========================================= Navbar ======================================================== -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="/assets/logo/d-cafe-dark.png" alt="Logo" height="24"
+          class="d-inline-block align-text-top d-dark-none ">
+        <img src="/assets/logo/d-cafe-light.png" alt="Logo" height="24"
+          class="d-inline-block align-text-top d-light-none ">
+      </a>
+      <!-- <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form> -->
+
+      <div class="d-flex justify-content-end align-items-center gap-2">
+
+        <a href="#" class="btn btn-outline-dark" data-bs-target="#reserveModal" data-bs-toggle="modal">Reserve Now</a>
+
+        <!-- Theme Toggle Switch -->
+        <div class="switch">
+          <label for="toggle">
+            <input id="toggle" class="toggle-switch toggle-switch-dark" type="checkbox">
+            <div class="sun-moon">
+              <div class="dots"></div>
+            </div>
+            <div class="background">
+              <div class="stars1"></div>
+              <div class="stars2"></div>
+            </div>
+          </label>
+        </div>
+        <!-- Theme Toggle Switch -->
+
+        <a class="font-weight-bold text-dark text-dark-white" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-list"></i></a>
+
+      </div>
+
+    </div>
+
+    </div>
+  </nav>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">
+        <img src="/assets/logo/d-cafe-dark.png" alt="Logo" height="50"
+          class="d-inline-block align-text-top d-dark-none ">
+        <img src="/assets/logo/d-cafe-light.png" alt="Logo" height="50"
+          class="d-inline-block align-text-top d-light-none ">
+      </h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+      </ul>
+
+      <div class="space-between" data-space="20"></div>
+      <div class="action_contact">Book Online Or Call (1800)456-6743 </div>
+    </div>
+  </div>
+  <!-- Navbar ========================================= Navbar ======================================================== -->
+  <!-- Navbar ========================================= Navbar ======================================================== -->
+  <!-- Navbar ========================================= Navbar ======================================================== -->
+
+
+
+  <!-- Hero ========================================= Hero ========================================================  -->
+  <!-- Hero ========================================= Hero ========================================================  -->
+  <!-- Hero ========================================= Hero ========================================================  -->
+  <section class="hero" style="background-image: url(/assets/shop/shop_coffe.png);">
+    <div class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start d-flex flex-column justify-content-center">
+            <h1 class="font-weight-bold text-dark text-dark-white welcome-text ">Welcome to</h1>
+            <h1 class="font-weight-bold text-dark text-dark-white resturant_name">D Cafe</h1>
+            <p class="text-dark text-dark-white mt-4 action_contact">Book Online Or Call (1800)456-6743 </p>
+
+          </div>
+          <div class="col-md-6 ">
+            <img src="/assets/coffe/cup_of_coffe.png" alt="Logo" class="d-inline-block align-text-top w-100">
+          </div>
+        </div>
+      </div>
+      <!-- Jump to Next Section -->
+      <div class="arrow bounce jump_arrow">
+        <a href="#about_us">
+          <i class="bi bi-chevron-down"></i>
+          <i class="bi bi-chevron-down"></i>
+          <i class="bi bi-chevron-down"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Hero ========================================= Hero ========================================================  -->
+  <!-- Hero ========================================= Hero ========================================================  -->
+  <!-- Hero ========================================= Hero ========================================================  -->
+
+
+  <!-- About Us ========================================= About Us ======================================================== -->
+  <!-- About Us ========================================= About Us ======================================================== -->
+  <!-- About Us ========================================= About Us ======================================================== -->
+  <section class="about_us" id="about_us">
+    <div class="container">
+      <div class="section-title">
+        <div class="title">Discover</div>
+        <div class="sub-title">Our Story</div>
+      </div>
+
+      <div class="content">
+        <div class="content-block">
+          “Cooking is like fashion. Always, I like to try to change. If I’m traveling in a different country – to
+          Australia, the Bahamas, Budapest, Moscow – and I see a new ingredient, I like to try it in a new dish”
+        </div>
+        <div class="content-block">
+          Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan
+          exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus,
+          Marfa eiusmod Pinterest in do umami readymade swag. Selfies iPhone Kickstarter, drinking vinegar jean vinegar
+          stumptown yr pop-up artisan sunt. Craft beer elit seitan exercitation, photo booth
+        </div>
+        <div class="content-block">
+          Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud.
+          Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse nihil, flexitarian Truffaut synth
+          art party deep v chillwave. Seitan High Life reprehenderit consectetur cupidatat kogi. Et leggings fanny pack,
+          elit bespoke vinyl art party Pitchfork selfies master cleanse
+        </div>
+      </div>
+      <div class="space-between" data-space="30"></div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="chef">
+            <img src="/assets/cheif/1.jpg" alt="Chef Image" class="w-100 rounded">
+            <div class="description">French Chef</div>
+            <div class="name">Alexder Smith</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="chef">
+            <img src="/assets/cheif/2.jpg" alt="Chef Image" class="w-100 rounded">
+            <div class="description">French Chef</div>
+            <div class="name">Alexder Smith</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="chef">
+            <img src="/assets/cheif/3.jpg" alt="Chef Image" class="w-100 rounded">
+            <div class="description">French Chef</div>
+            <div class="name">Alexder Smith</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- About Us ========================================= About Us ======================================================== -->
+  <!-- About Us ========================================= About Us ======================================================== -->
+  <!-- About Us ========================================= About Us ======================================================== -->
+
+
+
+
+  <!-- online reservation ========================================= online reservation ======================================================== -->
+  <!-- online reservation ========================================= online reservation ======================================================== -->
+  <!-- online reservation ========================================= online reservation ======================================================== -->
+  <section class="online_reservation" style="background: url('/assets/shop/shop_coffe.png');">
+    <div class="container">
+
+      <div class="content">
+        <a class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#reserveModal">Make an Online
+          Reservation</a>
+        <br />
+        <p>or call us <a href="tel:0123456789">0123 456 789</a></p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- online reservation ========================================= online reservation ======================================================== -->
+  <!-- online reservation ========================================= online reservation ======================================================== -->
+  <!-- online reservation ========================================= online reservation ======================================================== -->
+
+
+  <!-- part of meat and check ========================================= part of meat and check ======================================================== -->
+  <!-- part of meat and check ========================================= part of meat and check ======================================================== -->
+  <!-- part of meat and check ========================================= part of meat and check ======================================================== -->
+  <section class="part_meet_and_check">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="section-title">
+            <div class="title">Chef</div>
+            <div class="sub-title">Philosophy</div>
+          </div>
+
+          <div class="content">
+            <div class="content-block">
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi exercitation, photo booth.</p>
+            </div>
+            <a class="" href="#"> Read More</a>
+          </div>
+
+        </div>
+        <div class="col-md-6">
+          <div class="chef">
+            <img src="/assets/cheif/4.jpg" alt="Chef Image" class="w-100 rounded">
+          </div>
+        </div>
+      </div>
+
+      <div class="row  align-items-center flex-row-reverse">
+        <div class="col-md-6">
+          <div class="section-title">
+            <div class="title">Check out</div>
+            <div class="sub-title">Restaurant</div>
+          </div>
+
+          <div class="content">
+            <div class="content-block">
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi. </p>
+            </div>
+            <a class="" href="#"> Find Us</a>
+          </div>
+
+        </div>
+        <div class="col-md-6">
+          <div class="chef">
+            <img src="/assets/cheif/7.jpg" alt="Chef Image" class="w-100 rounded">
+          </div>
+        </div>
+      </div>
+
+      <div class="row  align-items-center ">
+        <div class="col-md-6">
+          <div class="section-title">
+            <div class="title">Meet</div>
+            <div class="sub-title">Our Chef</div>
+          </div>
+
+          <div class="content">
+            <div class="content-block">
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi exercitation, photo booth. </p>
+            </div>
+            <div class="chef-name">John Phillipe</div>
+          </div>
+
+        </div>
+        <div class="col-md-6">
+          <div class="chef_name">
+            <img src="/assets/cheif/5.jpg" alt="Chef Image" class="w-100 rounded">
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- part of meat and check ========================================= part of meat and check ======================================================== -->
+  <!-- part of meat and check ========================================= part of meat and check ======================================================== -->
+
+
+
+  <!-- menu ========================================= menu ======================================================== -->
+  <!-- menu ========================================= menu ======================================================== -->
+  <!-- menu ========================================= menu ======================================================== -->
+  <section class="menu" style="background: url(/assets/cheif/5.jpg);">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-title">
+            <div class="title">Check out</div>
+            <div class="sub-title">Our Menus</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu-content">
+    <div>
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-md-12">
+            <div class="content text-center">
+              <div class="content-block mb-4">“You can put the greatest seafood restaurant next to an average steak
+                house
+                in an
+                urban area, and that steak house will do more business than the seafood place. If you go to the water,
+                you
+                can put an average seafood place next to the greatest steak house, and people are going to eat seafood.”
+              </div>
+              <div class="content-block mb-4">
+                732/21 Second Street, Manchester,
+                King Street, Kingston United Kingdom</div>
+              <div class="content-block mb-4">
+                Opening Hours
+                Mon – Fri 11:30am – 8pm
+                Sat – Sun 11:30am – 9pm</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="menu-dishes">
+    <div>
+      <div class="container">
+
+        <div class="row mb-5">
+          <div class="col-md-6">
+            <div class="section-title">
+              <div class="sub-title">Signature Dishes</div>
+            </div>
+
+            <div class="content">
+
+              <div class="content-block">
+                <p class="title">
+                  Crab With Curry Sources
+                  <span>
+                    $24.5
+                  </span>
+                </p>
+                <p class="description">
+                  Crab / Potatoes / Rice
+                </p>
+              </div>
+
+
+              <div class="content-block">
+                <p class="title">
+                  Crab With Curry Sources
+                  <span>
+                    $24.5
+                  </span>
+                </p>
+                <p class="description">
+                  Crab / Potatoes / Rice
+                </p>
+              </div>
+
+              <div class="content-block">
+                <p class="title">
+                  Crab With Curry Sources
+                  <span>
+                    $24.5
+                  </span>
+                </p>
+                <p class="description">
+                  Crab / Potatoes / Rice
+                </p>
+              </div>
+
+
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="chef_name">
+              <img src="/assets/coffe/cup_of_coffe.png" alt="Chef Image" class="w-100 rounded">
+            </div>
+          </div>
+        </div>
+        <div class="row flex-row-reverse mb-5">
+          <div class="col-md-6">
+            <div class="content">
+              <div class="section-title">
+                <div class="sub-title">Starters</div>
+              </div>
+
+
+              <div class="content-block">
+                <p class="title">
+                  Crab With Curry Sources
+                  <span>
+                    $24.5
+                  </span>
+                </p>
+                <p class="description">
+                  Crab / Potatoes / Rice
+                </p>
+              </div>
+
+
+              <div class="content-block">
+                <p class="title">
+                  Crab With Curry Sources
+                  <span>
+                    $24.5
+                  </span>
+                </p>
+                <p class="description">
+                  Crab / Potatoes / Rice
+                </p>
+              </div>
+
+              <div class="content-block">
+                <p class="title">
+                  Crab With Curry Sources
+                  <span>
+                    $24.5
+                  </span>
+                </p>
+                <p class="description">
+                  Crab / Potatoes / Rice
+                </p>
+              </div>
+
+
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="chef_name">
+              <img src="/assets/coffe/cup_of_coffe.png" alt="Chef Image" class="w-100 rounded">
+            </div>
+          </div>
+        </div>
+
+  </section>
+
+
+  <!-- Contact ========================================= contact ======================================================== -->
+  <!-- Contact ========================================= contact ======================================================== -->
+  <section class="contact-us">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3 class="title">Location</h3>
+          <br />
+          <div>
+            732/21 Second Street, Manchester, King Street, Kingston United Kingdom
+          </div>
+          <br />
+          <div>
+            Opening Hours <br>
+            Mon – Fri 11:30am – 8pm<br>
+            Sat – Sun 11:30am – 9pm<br>
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <div class="form-group mb-3">
+            <label for="name">Your name</label><br />
+            <input type="text" class="form-control" id="name" placeholder="Your name" aria-label="Recipient's username"
+              aria-describedby="button-addon2">
+          </div>
+    
+          <div class="form-group mb-3">
+            <label for="email">Your email</label><br />
+            <input type="email" class="form-control" id="email" placeholder="Your email" aria-label="Recipient's email"
+              aria-describedby="button-addon2">
+          </div>
+    
+          <div class="form-group mb-3">
+            <label for="message">Your message (optional)</label><br />
+            <textarea type="text" id="message" class="form-control" placeholder="Your message"
+              aria-label="Recipient's message" aria-describedby="button-addon2"></textarea>
+          </div>
+          
+          <button type="button" class="btn btn-primary">Submit</button>
+    
+  
+        </div>
+      </div>
+      <br/>
+      <br/>
+      <br/>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7300.453561811527!2d90.36542900000005!3d23.810533500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1280010ef2f%3A0x2754a869fd97db45!2sLane-8%2C%20Dhaka%201216!5e0!3m2!1sen!2sbd!4v1752922474988!5m2!1sen!2sbd" class="w-100"  style="border:0; aspect-ratio: 16/9;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+  </section>
+  <!-- Contact ========================================= contact ======================================================== -->
+  <!-- Contact ========================================= contact ======================================================== -->
+
+
+
+
+
+  <!-- footer ========================================= footer ======================================================== -->
+  <!-- footer ========================================= footer ======================================================== -->
+  <!-- footer ========================================= footer ======================================================== -->
+  <hr>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <div class="footer-widget">
+            <div class="footer-logo">
+              <img src="/assets/logo/d-cafe-dark.png" alt="Logo" height="100"
+                class="d-inline-block align-text-top d-dark-none ">
+              <img src="/assets/logo/d-cafe-light.png" alt="Logo" height="100"
+                class="d-inline-block align-text-top d-light-none ">
+              <br>
+              <br>
+              <br>
+            </div>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+              blind texts.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h3>Location</h3>
+          <p>198 West 21th Street, Suite 721 New York NY 10016</p>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h3>Open Hours</h3>
+          <p>Monday-Friday 9am-9pm</p>
+          <p>Saturday-Sunday 9am-1pm</p>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h3>Reservation</h3>
+          <p>Call (123) 456-7890</p>
+          <p>Call (123) 456-7890</p>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center ">
+          <div class="social d-flex justify-content-center gap-2">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+          <p class="copyright">Copyright &copy; 2023 All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+  <!-- Reservation ========================================= Reservation ======================================================== -->
+  <div class="modal fade" id="reserveModal" aria-hidden="true" aria-labelledby="reserveModalLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="reserveModalLabel">Modal 1</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Show a second modal and hide this one with the button below.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Send message</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reservation ========================================= Reservation ======================================================== -->
+
+
+
+    <script src="/assets/scripts/day_night.js"></script>
+</body>
+
+</html>

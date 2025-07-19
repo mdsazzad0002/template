@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* import form file */
+@font-face { 
+  font-family: "RightmanSignature";
+  src: url('/assets/fonts/RightmanSignature-mLdMV.otf') format('opentype');
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+span {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+
+/* Hide in dark mode or when theme is empty */
+[data-bs-theme=''],
+[data-bs-theme='dark'] {
+  .d-dark-none {
+    display: none !important;
+  }
+
+  .text-dark-white {
+    color: #ffffff !important;
+  }
+
+  .btn-outline-dark {
+    border-color: #ffffff !important;
+    color: #ffffff !important;
+  }
+
+  .btn-outline-dark:hover {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+}
+
+/* Hide in light or day mode */
+[data-bs-theme='light'],
+[data-bs-theme='day'] {
+  .d-light-none {
+    display: none !important;
+  }
+}
+
+
+.space-between {
+  height: 0;
+}
+
+/* ============================================= Section ============================================= */
+
+section{
+  padding: 5rem 0;
+}
+
+.section-title {
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.section-title .title{
+  font-family: "Nothing You Could Do", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: min(3vw, 2rem);
+  line-height: 1.2;
+}
+
+.section-title .sub-title{
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: min(5vw, 3rem);
+  line-height: 1.2;
+}
+.section-title::after {
+    position: absolute;
+    content: '☕';
+    width: 20px;
+    height: 20px;
+    /* background: red; */
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* ============================================= Section ============================================= */
+
+
+.offcanvas-body {
+  font-size: min(3vw, 2rem);
+}
+.offcanvas-body a{
+  font-weight: 400;
+  font-family: "Josefin Sans", sans-serif;
+  color: #5c5c5c;
+}
+.offcanvas-body a.active {
+  font-weight: 600;
+  color: #000000;
+}
+
+[data-bs-theme='dark'] .offcanvas-body a{
+  color: #808080;
+}
+[data-bs-theme='dark'] .offcanvas-body a.active {
+  color: #ffffff;
+}
+
+
+
+/* ============================================= Hero ============================================= */
+.hero {
+  min-height: 80vh;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.hero::after {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000006e;
+    top: 0;
+}
+.hero .content{
+  position: relative;
+  z-index: 1;
+}
+
+.hero .welcome-text {
+  font-family: "Nothing You Could Do", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: min(8vw, 3rem);
+  line-height: 1.2;
+}
+
+.hero .resturant_name {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: min(10vw, 7rem);
+  line-height: 1.2;
+}
+
+.hero .action_contact {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: italic;
+  font-size: min(3vw, 1rem);
+  line-height: 1.2;
+}
+
+
+.hero .jump_arrow {
+  position: absolute;
+  bottom: -100px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hero .jump_arrow a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1px;
+  background: #ffffff00;
+  border: 2px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 25px;
+
+
+}
+
+
+.hero .jump_arrow a i {
+  margin: 0;
+  padding: 0px
+}
+
+
+[data-bs-theme=''],
+[data-bs-theme='dark'] {
+
+  .hero .jump_arrow a {
+    background: #ffffff00;
+    border: 2px solid white;
+    color: white;
+  }
+
+
+
+}
+
+/* ============================================= Hero ============================================= */
+
+
+
+
+/* ============================================= About Us ============================================= */
+.about_us .content{
+  padding: 30px 0;
+}
+.about_us .content .content-block{
+  margin-bottom: 60px;
+}
+
+.about_us .description{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.2;
+  margin-top: 20px;
+}
+.about_us .name{
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.2;
+  margin-top: 10px;;
+}
+
+/* ============================================= About Us ============================================= */
+
+
+/* ========================================== Reservation ============================================= */
+.online_reservation{
+
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  position: relative;
+  z-index: 0;
+}
+
+.online_reservation .content{
+  min-height: 300px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0px;
+  padding: 30px 0;
+  font-size: 20px;
+}
+
+section.online_reservation::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: #00000091;
+    top: 0;
+}
+/* ========================================== Reservation ============================================= */
+
+
+.part_meet_and_check .chef-name{
+  font-family: RightmanSignature;
+  font-weight: 900;
+  font-style: normal;
+  font-size: min(8vw, 3rem);
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+
+/* ============================================= Menu ============================================= */
+
+.menu{
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  position: relative;
+  z-index: 0;
+  min-height: 300px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0px;
+  padding: 30px 0;
+  zoom: 200%;
+
+}
+
+.menu-content{
+  font-size: 20px;;
+}
+
+
+.menu-dishes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.menu-dishes .content-block {
+    border: 1px dashed gray;
+    padding: 15px;
+}
+
+.menu-dishes p.title {
+    display: flex;
+    justify-content: space-between;
+}
