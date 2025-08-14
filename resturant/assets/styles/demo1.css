@@ -184,9 +184,9 @@ section{
   align-items: center;
   flex-direction: column;
   gap: 1px;
-  background: #ffffff00;
-  border: 2px solid rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+    background: #ffffff00;
+    border: 2px solid white;
+    color: white;
   padding: 10px;
   border-radius: 25px;
 
@@ -200,18 +200,6 @@ section{
 }
 
 
-[data-bs-theme=''],
-[data-bs-theme='dark'] {
-
-  .hero .jump_arrow a {
-    background: #ffffff00;
-    border: 2px solid white;
-    color: white;
-  }
-
-
-
-}
 
 /* ============================================= Hero ============================================= */
 
